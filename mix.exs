@@ -8,11 +8,11 @@ defmodule OXR.Mixfile do
      version: @version,
      elixir: "~> 1.2",
      description: "A thin API wrapper for Open Exchange Rates (https://openexchangerates.org)",
-		 escript: escript,
+     escript: escript,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps,
-		 package: package]
+     package: package]
   end
 
   defp escript do
