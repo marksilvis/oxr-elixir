@@ -6,7 +6,7 @@ A thin API wrapper for [Open Exchange Rates](https://openexchangerates.org)
   First, add OXR to your list of dependencies in `mix.exs`:
 
         def deps do
-          [{:oxr, "~> 0.2.0"}]
+          [{:oxr, "~> 0.3.1"}]
         end
 
   Second, ensure OXR is started before your application:
