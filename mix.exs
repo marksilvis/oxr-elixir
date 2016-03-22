@@ -8,12 +8,17 @@ defmodule OXR.Mixfile do
      version: @version,
      elixir: "~> 1.2",
      description: "A thin API wrapper for Open Exchange Rates (https://openexchangerates.org)",
+		 escript: escript,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps,
 		 package: package]
   end
 
+  defp escript do
+    [main_module: OXR.CLI]
+	end
+	
   # Configuration for the OTP application
   #
   # Type "mix help compile.app" for more information
