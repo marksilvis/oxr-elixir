@@ -7,7 +7,7 @@ defmodule OXR.Mixfile do
     [app: :oxr,
      version: @version,
      elixir: "~> 1.2",
-     description: "An API wrapper for Open Exchange Rates (https://openexchangerates.org)",
+     description: "A thin API wrapper for Open Exchange Rates (https://openexchangerates.org)",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps,
@@ -36,7 +36,7 @@ defmodule OXR.Mixfile do
   end
 
   defp package do
-    [files: ["lib", "mix.exs", "README", "LICENSE", "VERSION"],
+    [files: ["lib", "mix.exs", "README*", "readme*",  "LICENSE*", "license*", "VERSION"],
      maintainer: ["Mark Silvis"],
      licenses: ["LICENSE"],
      links: %{"GitHub" => "https://github.com/marksilvis/oxr-elixir"}]
