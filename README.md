@@ -14,3 +14,10 @@ A thin API wrapper for [Open Exchange Rates](https://openexchangerates.org)
         def application do
           [applications: [:oxr]]
         end
+
+## CLI
+  You can use the OXR cli by building an escript:
+
+        mix escript.build
+
+  Then using ./oxr
