@@ -39,6 +39,6 @@ defmodule OXR.Mixfile do
     [files: ["lib", "mix.exs", "README", "LICENSE", "VERSION"],
      maintainer: ["Mark Silvis"],
      licenses: ["LICENSE"],
-     links: %{"GitHub" => "https://github.com/marksilvis/elixir-oxr"}]
+     links: %{"GitHub" => "https://github.com/marksilvis/oxr-elixir"}]
   end
 end
