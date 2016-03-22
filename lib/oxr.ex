@@ -212,7 +212,7 @@ defmodule OXR do
     # return usage data
     cond do
       status === 200 ->
-        {:ok, get_usage_data(body)}
+        {:ok, parse_usage_data(body)}
       status >= 300 ->
         {:error, status, body["message"], body["description"]}
       true ->
@@ -220,8 +220,8 @@ defmodule OXR do
     end
   end
 
-  @spec get_usage_data(%{}) :: %Data{} 
-  defp get_usage_data(body) do
+  @spec parse_usage_data(%{}) :: %Data{} 
+  defp parse_usage_data(body) do
     parsed = Poison.Parser.parse!(body) |> Map.get("data")
     plan = parsed["plan"]
     feat = plan["features"]
