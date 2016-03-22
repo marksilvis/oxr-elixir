@@ -1,6 +1,6 @@
 # OXR
 
-A light API wrapper for [Open Exchange Rates](https://openexchangerates.org)
+A thin API wrapper for [Open Exchange Rates](https://openexchangerates.org)
 
 ## Installation
   First, add OXR to your list of dependencies in `mix.exs`:
