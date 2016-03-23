@@ -43,7 +43,7 @@ defmodule OXR.Mixfile do
   defp package do
     [files: ["lib", "mix.exs", "README*",  "LICENSE*", "VERSION"],
      maintainers: ["Mark Silvis"],
-     licenses: ["LICENSE"],
+     licenses: ["MIT"],
      links: %{"GitHub" => "https://github.com/marksilvis/oxr-elixir"}]
   end
 end
