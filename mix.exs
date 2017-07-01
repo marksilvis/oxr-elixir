@@ -6,13 +6,13 @@ defmodule OXR.Mixfile do
   def project do
     [app: :oxr,
      version: @version,
-     elixir: "~> 1.2.3",
+     elixir: ">= 1.2.3",
      description: "A thin API wrapper for Open Exchange Rates (https://openexchangerates.org)",
-     escript: escript,
+     escript: escript(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps,
-     package: package]
+     deps: deps(),
+     package: package()]
   end
 
   defp escript do
@@ -36,8 +36,8 @@ defmodule OXR.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:poison, "~> 2.1"},
-     {:httpoison, "~> 0.8.2"}]
+    [{:poison, ">= 2.1.0"},
+     {:httpoison, ">= 0.11.2"}]
   end
 
   defp package do
