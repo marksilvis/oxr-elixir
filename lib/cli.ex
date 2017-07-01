@@ -95,6 +95,7 @@ defmodule OXR.CLI do
 
     usage
            get usage and plan information
+             --id     (required) app id
     """
   end
 
