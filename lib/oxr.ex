@@ -1,6 +1,6 @@
 defmodule OXR do
   @moduledoc """
-  A thin wrapper for the Open Exchange Rates API
+  A thin wrapper for the Open Exchange Rates API. 
   Requires an app id, which you can receive at https://openexchangerates.org
   """
 
